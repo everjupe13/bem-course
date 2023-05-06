@@ -1,0 +1,19 @@
+.list {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__item-link {
+    padding: 3px 6px;
+
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #EBEBEB;
+  }
+}

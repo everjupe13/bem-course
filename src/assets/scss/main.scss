@@ -1,0 +1,81 @@
+@charset 'UTF-8'; // set encoding to most common type
+@import 'core.scss';
+@import 'objects/image-interactive';
+
+
+.promo {
+  padding-top: 40px;
+
+  &__wrapper {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 635px 457px;
+    column-gap: 88px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    margin-bottom: 50px;
+  }
+
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    margin-bottom: 40px;
+
+    .badge {
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+  }
+
+  &__description {
+    .promo__btn {
+      margin-top: 20px;
+    }
+  }
+  &__text {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__wrapper-glass {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__wrapper-glass-image {
+    &:nth-child(1) {
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      z-index: 3;
+
+      margin-top: 166px;
+      margin-left: auto;
+    }
+  }
+
+  &__pozvonok {
+    position: absolute;
+    z-index: 1;
+
+    bottom: 20px;
+    left: 315px;
+  }
+
+}

@@ -1,0 +1,23 @@
+.footer {
+  margin-top: auto;
+  margin-bottom: 20px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    display: inline-block;
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(235, 235, 235, 0.5);
+  }
+}
